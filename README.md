@@ -28,7 +28,7 @@
 코딩 지식 없이 AI 코딩 도구로 동작하는 결과물을 만들어 보며 개발의 전체 흐름을 체험하는 수준
 
 1. **바이브 코딩 기본** — Claude Code 설치·활용, 좋은 프롬프트 작성, 파이썬 코드 읽기와 오류 해결, CLAUDE.md·uv 가상환경, Git/GitHub, 엑셀 자동화, API 활용과 비밀정보 관리, Streamlit 웹 앱 개발·배포
-2. **바이브 코딩 고급** — 데이터베이스(SQLite), 챗봇·메신저 봇, Claude API 활용, Skills·MCP로 Claude Code 확장, 모던 모놀리스 웹 서비스(Django + HTMX)
+2. **바이브 코딩 고급** — 데이터베이스(SQLite), 모던 모놀리스 웹 서비스(Django + HTMX), 챗봇·메신저 봇, Claude API 활용, Skills·MCP로 Claude Code 확장
 
 ### 2단계: LLM 응용 서비스 개발
 
