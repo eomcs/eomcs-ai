@@ -11,7 +11,7 @@
 | 학습 대상 | 바이브 코딩 기본 과정 수료자, 또는 Claude Code로 파이썬 프로그램을 만들고 Git·GitHub를 써 본 사람 |
 | 과정 구성 | 12장 × 3시간 (총 36시간) |
 | 진행 방식 | 짧은 개념 설명(30%) + 실습(60%) + 공유·회고(10%) |
-| 사용 도구 | Claude Code, Python, uv, VS Code, Git·GitHub, SQLite, Django, HTMX, 텔레그램 봇, Claude API |
+| 사용 도구 | Claude Code, Python 3.15, uv, VS Code, Git·GitHub, SQLite, Django, HTMX, 텔레그램 봇, Claude API |
 | 사전 준비 | 기본 과정 준비물(노트북, Claude 유료 구독, GitHub 계정) + Anthropic Console 계정(API 사용료 별도), 텔레그램 계정 |
 | 최종 결과물 | 데이터베이스와 AI 기능을 갖춘 웹 서비스(필요하면 메신저 봇 포함) 1개를 만들어 인터넷에 배포하고 발표 |
 
@@ -91,7 +91,7 @@
 
 | 시간 | 내용 |
 |---|---|
-| 20분 | 오리엔테이션: 기본 과정 결과물 공유, 개발 환경 점검(Claude Code 업데이트, uv, Git) |
+| 20분 | 오리엔테이션: 기본 과정 결과물 공유, 개발 환경 점검(Claude Code 업데이트, uv, uv로 Python 3.15 준비, Git) |
 | 30분 | 개념: 왜 데이터베이스인가 — JSON·CSV 파일의 한계(검색, 동시 수정, 데이터 양), 테이블·행·열, SQLite = 파일 하나로 된 데이터베이스 |
 | 30분 | SQL 읽기: `CREATE TABLE`, `INSERT`, `SELECT ... WHERE ... ORDER BY`, `UPDATE`, `DELETE` |
 | 80분 | 실습: 가계부 프로그램 (지출 기록 → 조회 → 수정·삭제 → 기간별 조회) |
@@ -224,7 +224,7 @@ uv로 Django 프로젝트를 만들어 줘. 프로젝트 이름은 config, 앱 �
 
 **핵심 포인트**
 - 개발 서버(`localhost:8000`)는 내 컴퓨터에서만 열린다는 점을 기본 과정 10장과 연결해 다시 확인한다.
-- 실습 환경을 맞춘다: Python 3.13, Django 6.1.x(`uv add "django>=6.1,<6.2"`), 브랜치 이름 `main`, `uv.lock` 커밋.
+- 실습 환경을 맞춘다: Python 3.15, Django 6.1.x(`uv add "django>=6.1,<6.2"`), 브랜치 이름 `main`, `uv.lock` 커밋.
 - Django가 만든 `SECRET_KEY`는 `settings.py`에 둔 채 시작하므로 **Git에 올라간 개발 전용 키**로 취급한다. 저장소는 비공개로 두고, 6장에서 운영용 키를 새로 만든다.
 
 **과제**: 브랜치에서 페이지 1개(예: 자주 묻는 질문)를 추가해 `--no-ff`로 병합하고 GitHub에 올리기, URL부터 화면까지의 흐름을 직접 글로 설명해 오기
@@ -704,6 +704,7 @@ description: Django 프로젝트에 새 기능을 추가할 때 사용한다. �
 - [ ] 학습자 스마트폰·PC에 텔레그램 설치 및 계정 확인
 - [ ] 실습실 네트워크에서 Claude Code·PyPI·GitHub·`api.anthropic.com`·`api.telegram.org` 접속 가능 여부 확인
 - [ ] 배포 서비스(예: PythonAnywhere, Render)의 최신 무료 요금제 조건(디스크 보존, 상시 실행, 외부 접속 허용 범위) 확인
+- [ ] 학습자 PC에서 `uv python install 3.15`로 Python 3.15를 쓸 수 있는지 확인 (실습실 네트워크에서 uv의 파이썬 내려받기가 막혀 있지 않은지 포함)
 - [ ] DB Browser for SQLite(또는 VS Code SQLite 확장) 설치 확인
 - [ ] 학습자의 기본 과정 결과물 GitHub 저장소 확인 (기본 과정 미수료자는 사전 보충 자료 안내)
 
